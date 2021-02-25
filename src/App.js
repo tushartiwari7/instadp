@@ -1,11 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+      <header>
+        {/* <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -16,10 +15,16 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React
-        </a>
+        </a> */}
+        <nav className="navbar navbar-dark bg-dark justify-content-between">
+          <h1 className="navbar-brand display-2 ml-3" >InstaDp</h1>
+          <form className="form-inline ml-3">
+            <input className="form-control mr-5" style={{width: "20em"}} type="search" placeholder="Enter Instagram Id" aria-label="Search" />
+            <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </nav>
       </header>
     </div>
   );
 }
-
 export default App;
